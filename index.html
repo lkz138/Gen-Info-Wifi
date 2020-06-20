@@ -21,16 +21,19 @@
          'method': 'post',
          'action': '',
       });
+      
+      const item_l2_names = [
+         '暗号方式',
+         'SSID',
+         'パスワード',
+      ];
 
       for(var i=0; i<3; i++){
          $('#form_userin_0').append('<input />');
          $("#form_userin_0 input:last-child").attr({
             'id':  'form_userin_0_input_' + i,
+            'placeholder': item_l2_names[i],
          });
-      }
-
-      for(var i=0; i<3; i++){
-         $("#form_userin_0_input_" + i).before('<fieldset />');
       }
 
 
