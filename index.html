@@ -52,7 +52,9 @@
 <script type="text/javascript">
    $(function(){
       $('.form_userin_0_group_wifistr').on('change', function(){
-         $('#form_sysout_0').text('');
+         $('#form_sysout_0').text(
+            $('.form_userin_0_input_0').val()
+         );
          alert('');
       });
    });
