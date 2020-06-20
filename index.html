@@ -22,6 +22,11 @@
          'action': '',
       });
       
+      $("body").append("<output />");
+      $("body form:last-child").attr({
+         'id':     'form_sysout_0',
+      });
+      
       const item_l2_names = [
          '暗号方式',
          'SSID',
@@ -36,6 +41,7 @@
          $('#form_userin_0').append('<input />');
          $("#form_userin_0 input:last-child").attr({
             'id':  'form_userin_0_input_' + i,
+            'class': 'form_userin_0_group_wifistr',
             'placeholder': item_l2_names[i],
          });
       }
@@ -43,6 +49,14 @@
 
    });
 </script>
+<script type="text/javascript">
+   $(function(){
+      $('.form_userin_0_group_wifistr').change(function(){
+         $('#form_sysout_0').text('');
+      }
+                                               });
+   </script>
+                                               
 </head>
 <body>
 
