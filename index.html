@@ -20,9 +20,9 @@ $("body form:last-child").attr({
    'method': 'post',
    'action': '',
 });
-$('#form_userin_0').append('<input />');
-$('#form_userin_0').append('<input />');
-$('#form_userin_0').append('<input />');
+for(var i=0; i<3; i++){
+   $('#form_userin_0').append('<input />');
+}
 
 });
 </script>
