@@ -29,6 +29,10 @@
       ];
 
       for(var i=0; i<3; i++){
+         
+         $('#form_userin_0').append('<h2 />');
+         $("#form_userin_0 h2:last-child").text(item_l2_names[i]);
+         
          $('#form_userin_0').append('<input />');
          $("#form_userin_0 input:last-child").attr({
             'id':  'form_userin_0_input_' + i,
