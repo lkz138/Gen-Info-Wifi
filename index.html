@@ -13,6 +13,7 @@
 <!-- Create object //-->
 <script type="text/javascript">
 $(function(){
+   
 $("body").append("<form />");
 $("body form:last-child").attr({
    'id':     'form_userin_0',
@@ -20,9 +21,14 @@ $("body form:last-child").attr({
    'method': 'post',
    'action': '',
 });
+
 for(var i=0; i<3; i++){
    $('#form_userin_0').append('<input />');
+   $("#form_userin_0 input:last-child").attr({
+      'id':  'form_userin_0_input_' + i,
+   });
 }
+
 
 });
 </script>
